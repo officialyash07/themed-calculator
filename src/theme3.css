@@ -1,0 +1,66 @@
+:root {
+    --violet-main-background: hsl(268, 75%, 9%);
+    --violet-display-background: hsl(268, 71%, 12%);
+    --violet-keypad-background: hsl(268, 71%, 12%);
+
+    --violet-key-background: hsl(281, 89%, 26%);
+    --violet-key-shadow: hsl(281, 89%, 26%);
+
+    --pure-cyan-key-background: hsl(176, 100%, 44%);
+    --pure-cyan-key-shadow: hsl(176, 98%, 61%);
+
+    --magenta-key-background: hsl(268, 47%, 21%);
+    --magenta-key-shadow: hsl(290, 70%, 36%);
+
+    --yellow-text: hsl(52, 100%, 62%);
+    --very-dark-blue-text: hsl(198, 20%, 13%);
+    --white-text: hsl(0, 0%, 100%);
+}
+.theme3 {
+    background-color: var(--violet-main-background);
+    color: var(--yellow-text);
+}
+
+.theme3 .themeToggle {
+    background-color: var(--violet-keypad-background);
+}
+
+.theme3 input:checked {
+    background-color: var(--pure-cyan-key-background);
+}
+
+.theme3 input:checked:hover {
+    background-color: var(--pure-cyan-key-shadow);
+}
+
+.theme3 .display {
+    background-color: var(--violet-display-background);
+}
+
+.theme3 .btnContainer {
+    background-color: var(--violet-keypad-background);
+}
+
+.theme3 button {
+    color: var(--yellow-text);
+    background-color: var(--magenta-key-background);
+    box-shadow: 0px 3px 0px 0px var(--magenta-key-shadow);
+}
+
+.theme3 .upBtn button:nth-child(4) {
+    color: var(--white-text);
+    background-color: var(--violet-key-background);
+    box-shadow: 0px 3px 0px 0px var(--magenta-key-shadow);
+}
+
+.theme3 .botBtn button:first-child {
+    color: var(--white-text);
+    background-color: var(--violet-key-background);
+    box-shadow: 0px 3px 0px 0px var(--magenta-key-shadow);
+}
+
+.theme3 .botBtn button:last-child {
+    color: var(--very-dark-blue-text);
+    background-color: var(--pure-cyan-key-background);
+    box-shadow: 0px 3px 0px 0px var(--pure-cyan-key-shadow);
+}

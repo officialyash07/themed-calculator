@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+/* Box Sizing */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset default Margin and Padding */
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default body styles */
+
+body {
+    line-height: 1.5;
+    background-size: cover;
+    background-position: bottom;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+/* Images Setup */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Form Element Setup */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Reset list style to none */
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+    list-style: none;
+}
+
+/* Reset lists padding */
+
+menu,
+ol,
+ul {
+    padding-left: 0;
+}
+
+/* Reset list markers */
+
+article ol,
+article ul {
+    list-style-position: inside;
+}
+
+/* Reset Cursor for Elements */
+
+label,
+button,
+select,
+summary,
+[type='radio'],
+[type='submit'],
+[type='checkbox'] {
+    cursor: pointer;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.calculator {
+    padding: 1rem;
+    width: 440px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+p {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.themeToggle {
+    position: relative;
+    height: 22px;
+    width: 70px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+label {
+    font-size: 0.91rem;
+    position: absolute;
+    bottom: 1.2rem;
+}
+
+label[for='theme_1'] {
+    left: 9px;
+}
+
+label[for='theme_2'] {
+    left: 31px;
+}
+
+label[for='theme_3'] {
+    left: 54px;
+}
+
+[id='theme_1'],
+[id='theme_2'],
+[id='theme_3'] {
+    appearance: none;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 30px;
+    top: 4px;
+    transition: 0.5s ease;
+}
+
+[id='theme_1'] {
+    left: 5px;
+}
+
+[id='theme_2'] {
+    left: 28px;
+}
+
+[id='theme_3'] {
+    left: 50px;
+}
+
+.display {
+    margin-block: 1rem;
+    height: 5rem;
+    text-align: right;
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.history {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 6px;
+    right: 1.1rem;
+}
+
+.result {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-block-start: 10px;
+}
+
+.btnContainer {
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.upBtn {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+button {
+    min-width: 3rem;
+    height: 3rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.botBtn {
+    margin-block-start: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
